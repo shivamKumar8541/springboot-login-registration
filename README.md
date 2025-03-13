@@ -30,6 +30,26 @@ spring.datasource.password=shivam
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
+User-Authentication-System/   # Root Directory (Repository Name)
+│── src/                      # Source Code
+│   ├── main/
+│   │   ├── java/com/shivam/  # Java Package
+│   │   │   ├── controller/   # Controllers (e.g., MyController.java)
+│   │   │   ├── entity/       # Entity Classes (e.g., User.java)
+│   │   │   ├── repository/   # Repositories (e.g., UserRepository.java)
+│   │   │   ├── service/      # Service Layer (e.g., UserService.java, UserServiceImpl.java)
+│   │   │   ├── Application.java  # Main Spring Boot Application
+│   │   ├── resources/        # Resources Folder
+│   │   │   ├── static/       # Static Files (CSS, JS, Images)
+│   │   │   ├── templates/    # Thymeleaf Templates (HTML Pages)
+│   │   │   ├── application.properties  # Spring Boot Configurations
+│── pom.xml                   # Maven Configuration (for dependencies)
+│── README.md                 # Project Documentation
+│── .gitignore                # Git Ignore File
+│── mvnw, mvnw.cmd            # Maven Wrapper Scripts
+│── target/                    # Compiled Output (Generated after build)
+
+
 Open browser and visit: http://localhost:8080/
 📄 API Endpoints
 Method	Endpoint	Description
