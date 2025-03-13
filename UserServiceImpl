@@ -1,0 +1,32 @@
+package com.shivam.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.shivam.entity.User;
+import com.shivam.repository.UserRepository;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+    @Autowired
+    private UserRepository userRepo; 
+
+
+    public boolean registerUser(User user) {
+        userRepo.save(user);  
+        return true;
+    }
+
+
+	@Override
+	public User loginUser(String email, String password) {
+		// TODO Auto-generated method stub
+		User validUser = userRepo.findByEmail(email);
+		if(validUser != null && validUser.getPassword().equals(password)) {
+			return validUser;
+		}
+		
+		return null;
+	}
+}
