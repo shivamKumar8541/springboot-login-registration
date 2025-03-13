@@ -1,7 +1,7 @@
 # springboot-login-registration
-# Spring Boot User Authentication System 🚀
 
-A **User Registration & Login System** built with **Spring Boot, Spring Security, JPA, and Thymeleaf**.
+
+A **User Registration & Login System** built with **Spring Boot, Spring-Data JPA, and Thymeleaf**.
 
 ## 📌 Features
 - ✅ **User Registration** with Email & Password  
